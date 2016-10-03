@@ -1,0 +1,46 @@
+.pc_loginOuter {
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    padding: 2rem;
+    max-width: 21rem;
+    min-width: 21rem;
+    border-radius: 2px;
+    top: 5rem;
+    box-shadow: 0.1rem 0.1rem 1rem #26a69a;
+    overflow:none;
+}
+
+md-input-container {
+    margin:0;
+    width:100%;
+}
+
+#pid_infoIcon {
+    color:rgba(0,0,0,0.12);
+    width:5%;
+    padding:0;
+    transition: all 0.1s;
+    font-size:30px;
+    outline:none;
+}
+#pid_infoIcon:hover {
+    color:#106CC8;
+}
+
+.md-button {
+    width:100%;
+    color:white;
+    margin:0;padding:0;
+    text-align:center;
+    background-color:rgba(0,0,0,0.12);
+}
+
+.md-button:not([disabled]):hover {
+  background-color: #106CC8;
+}
+
+.pc_inputDivs {
+    width:95%; float:left;
+}

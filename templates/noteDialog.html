@@ -1,0 +1,11 @@
+<md-dialog id="pid_dialogNote" aria-label="dialog-note-display">
+  <md-dialog-content>
+    <div id="pid_noteDialogContent">
+      <md-input-container id="pid_noteDialogInput">
+        <label>Leave a note</label>
+        <textarea ng-model="note" md-maxlength="5000" rows="5" md-select-on-focus></textarea>
+      </md-input-container>
+      <md-button id="pid_noteDialogSubmitBtn" ng-click="submit()"> Submit </md-button>
+    </div>
+  </md-dialog-content>
+</md-dialog>

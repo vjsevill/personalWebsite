@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Vincent Sevilla</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/angular-material.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rootStyles.css">
+
+
+    <!-- Angular -->
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-sanitize.js"></script>
+    <script src="lib/angular-material.js"></script> <!-- material/animate/aria depend on eachother, 'ngMaterial' required in module declaration-->
+    <script src="lib/angular-animate.js"></script>
+    <script src="lib/angular-aria.js"></script>
+    <script src="lib/angular-ui-router.js"></script><!-- necessary for route changes, 'ui.router' required in module declaration-->
+    <script src="lib/ui-router-styles.js"></script><!-- required for dynamic css loads per page,'uiRouterStyles' required in module declaration, note ui-router-styles attribute must be added to body or some high-level-->
+    <script src="lib/angular-local-storage.js"></script><!-- gives u access to browser cache, 'LocalStorageModule' required in module declaration-->
+
+
+    <!-- Firebase -->
+    <script src="lib/firebase.js"></script> <!-- 'firebase' required in module declaration-->
+
+    <!-- AngularFire -->
+    <script src="lib/angularfire.js"></script> <!-- this is required if u use both firebase/angular -->
+
+    <!-- JS -->
+    <script src="app.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/utils.js"></script>
+
+    <script src="scripts/controllers/homeCtrl.js"></script>
+    <script src="scripts/controllers/imgCtrl.js"></script>
+    <script src="scripts/controllers/loginCtrl.js"></script>
+    <script src="scripts/controllers/noteCtrl.js"></script>
+    <script src="scripts/controllers/rootCtrl.js"></script>
+
+    <script src="scripts/directives/fileInput.js"></script>
+    <script src="scripts/directives/resizeThis.js"></script>
+
+    <script src="scripts/factories/notify.js"></script>
+    <script src="scripts/factories/user.js"></script>
+    <script src="scripts/factories/validator.js"></script>
+
+    <script src="scripts/filters/trustUrl.js"></script>
+
+
+    <!-- Other -->
+    <script src="https://use.fontawesome.com/5d47caa66e.js"></script>
+
+<!-- https://jscompress.com/ to compress all js files into 1 minified form. make sure u paste them into there in order as u see here -->
+
+  </head>
+  <body ui-router-styles ng-controller="RootCtrl">
+    <md-progress-linear id="rootProgressBar" ng-if="progressStatus" md-mode="{{progressMode}}" value="{{percentage}}"></md-progress-linear>
+
+    <div id="rootDiv" ui-view></div>
+  </body>
+</html>
