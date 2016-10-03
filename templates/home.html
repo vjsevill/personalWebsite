@@ -40,7 +40,7 @@
                  <md-card-title>
                    <md-card-title-text id="pid_cardTextContainer">
                      <span class="md-headline">{{project.title}}</span>
-                     <span id="pid_cardText" class="md-subhead">{{project.description}}</span>
+                     <span id="pid_cardText" class="md-subhead" ng-bind-html= "project.description"></span>
                    </md-card-title-text>
                  </md-card-title>
                  <video style="width:90%; margin:5%" controls ng-src="{{project.url | trustUrl}}" type="video/mp4"> </video>
@@ -54,4 +54,5 @@
   </div>
 </div>
 
-  <file-input on-upload="uploadFile($event)"> </file-input>
+<!-- Upload a File ( to update the profile or a project)
+<file-input on-upload="uploadFile($event)"> </file-input> -->

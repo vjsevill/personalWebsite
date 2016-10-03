@@ -66,15 +66,17 @@ app.controller('HomeCtrl',
     );
 
     var insertIntoDB = function(url) {
+      /*upload a project with the given url*/
       // var newProject = {
-      //   'title': 'video1',
-      //   'description': 'this si video 1',
+      //   'title': 'Cannavigate',
+      //   'description': "This is a personal project of mine that I am currently working on.  It takes up most of my free time, but that's because I enjoy it and I see it being quite successful in the future. <br> <br> This application is for the growing cannabis industry.  I have many ideas that if implementable will rival the competition; I'm in the process of determining how possible these ideas are.  Currently, the login/signup/majority of the routing/authentication have been handled.  My next goal is to begin working on the home pages for each of the user types.",
       //   'rank': '1',
       //   'url': url
       // }
       // var videosRef = firebase.database().ref().child('projects');
       // videosRef.push(newProject);
 
+      /*update the profile with the given profilePicture url*/
       // var newProfile = {
       //   'url': url,
       //   'description': "My name is Vincent Sevilla.  I study Math - Computer Science at UCSD. I plan to graduate in June of 2017. <br> <br> When I'm not coding, I love to surf and hang out with my closest friends. <br> <br> If you would like to see my private github repositiories, please signin to github as<br>username:'janeydoe'<br>password:'janeydoe1'",
