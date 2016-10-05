@@ -69,7 +69,7 @@ app.controller('HomeCtrl',
       /*upload a project with the given url*/
       // var newProject = {
       //   'title': 'Cannavigate',
-      //   'description': 'This is a personal project of mine that I am currently working on.  It takes up most of my free time, but that is because I enjoy it and I see it being quite successful in the future. <br> <br> This application is for the growing cannabis industry.  I have many ideas that if implementable will rival the competition; I am in the process of determining how possible these ideas are.  Currently, the login/signup/majority of the routing/authentication have been handled.  My next goal is to begin working on the home pages for each of the user types.  You can find it <a href="https://friendlychat-abc7d.firebaseapp.com">here</a>.',
+      //   'description': 'This is a personal project of mine that I am currently working on.  It takes up most of my free time, but that is because I enjoy it and I see it being quite successful in the future. <br> <br> This application is for the growing cannabis industry.  I have many ideas that if implementable will rival the competition; I am in the process of determining how possible these ideas are.  Currently, the login/signup/majority of the routing/authentication have been handled.  My next goal is to begin working on the home pages for each of the user types.  You can find it <a href="https://friendlychat-abc7d.firebaseapp.com" target="_blank">here</a>.',
       //   'rank': '1',
       //   'url': url
       // }
