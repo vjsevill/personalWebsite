@@ -4,9 +4,9 @@
         <img ng-click="imageClick()" id="pid_profilePic" ng-src="{{profile.url}}" alt="" />
         <md-divider></md-divider>
         <div id="pid_persDescription">
-          <p ng-bind-html="profile.description"></p>
+          <p ng-bind-html="profile.description | trustUrl"></p>
           <md-divider></md-divider>
-          <p ng-bind-html="profile.email" style="text-align:right"></p>
+          <p ng-bind-html="profile.email | trustUrl" style="text-align:right"></p>
           <p ng-bind-html="profile.cellphone" style="text-align:right"></p>
         </div>
     </div>
@@ -54,5 +54,5 @@
   </div>
 </div>
 
-<!-- Upload a File ( to update the profile or a project)
-<file-input on-upload="uploadFile($event)"> </file-input> -->
+<!-- Upload a File ( to update the profile or a project)-->
+<!-- <file-input on-upload="uploadFile($event)"> </file-input> -->
