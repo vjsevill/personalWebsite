@@ -3,21 +3,11 @@ app.directive('resizeThis', ['$window', function($window) {
     restrict: 'A',
     link: function(scope, elem, attrs) {
       var dimensions = JSON.parse(attrs.resizeThis);
-      var widthFactor = dimensions.width;
-      var heightFactor = dimensions.height;
-      var newWidth = widthFactor * $window.innerWidth;
-      var newHeight = heightFactor * $window.innerHeight;
-      var maxWidth = screen.availWidth;
-      var maxHeight = screen.availHeight;
+      var widthFactor = dimensions.width, heightFactor = dimensions.height;
+      var maxWidth = screen.availWidth, maxHeight = screen.availHeight;
+      var newWidth, newHeight;
 
-      angular.element(elem).css(
-        {
-          'width': newWidth + 'px',
-          'height': newHeight + 'px'
-        }
-      );
-
-      var resizeCallback = function() {
+      var resizeNow = function() {
         newWidth = widthFactor * $window.innerWidth;
         newHeight = heightFactor * $window.innerHeight;
 
@@ -32,11 +22,13 @@ app.directive('resizeThis', ['$window', function($window) {
         }
       };
 
-      angular.element($window).bind('resize', resizeCallback);
+      angular.element($window).bind('resize', resizeNow);
 
       scope.$on('$destroy', function() {
-        angular.element($window).unbind('resize', resizeCallback);
+        angular.element($window).unbind('resize', resizeNow);
       });
+
+      resizeNow();
     }
   };
 }]);
