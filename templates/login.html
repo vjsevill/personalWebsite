@@ -1,28 +1,23 @@
-<div class="pc_loginOuter">
-    <md-content layout-padding>
-    <div layout-gt-sm="row" class="md-block" flex-gt-sm>
-        <div class="pc_inputDivs">
-            <md-input-container>
-                <label>Username</label>
-                <input ng-model="user.username" maxlength="30">
-            </md-input-container>
-        </div>
-        <i id="pid_infoIcon" ng-click="infoClick()" class="material-icons">&#xE88E;</i>
+<div class="pc_loginOuter" center-vertically>
+  <md-content flex-xs style="padding:1rem">
+    <div layout="row">
+      <md-input-container flex>
+        <label>Username</label>
+        <input ng-model="user.username" maxlength="30">
+      </md-input-container>
+      <i id="pid_infoIcon" ng-click="infoClick()" class="material-icons">&#xE88E;</i>
     </div>
-        <div layout-gt-sm="row" class="md-block pc_inputDivs" flex-gt-sm>
-            <md-input-container>
-                <label>Password</label>
-                <input ng-model="user.password" type="password" maxlength="30">
-            </md-input-container>
-        </div>
 
-        <div layout-gt-sm="row" class="md-block pc_inputDivs" flex-gt-sm>
-            <md-input-container>
-                <label>Company</label>
-                <input ng-model="user.company" maxlength="50">
-            </md-input-container>
-        </div>
+    <md-input-container class="md-block pc_loginInputs">
+      <label>Password</label>
+      <input ng-model="user.password" type="password" maxlength="30">
+    </md-input-container>
 
-        <md-button ng-click="loginClick()"> Login </md-button>
-    </md-content>
+    <md-input-container class="md-block pc_loginInputs">
+      <label>Company</label>
+      <input ng-model="user.company" maxlength="50">
+    </md-input-container>
+
+    <md-button ng-click="loginClick()" layout-fill> Login </md-button>
+  </md-content>
 </div>

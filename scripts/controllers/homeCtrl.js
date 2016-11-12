@@ -6,7 +6,7 @@ app.controller('HomeCtrl',
 
   $scope.projects = [];
 
-  $scope.menuOpenType = 'md-fling';
+  $scope.menuOpenType = 'md-scale';
   $scope.menuOpen = false;
 
   $scope.logoutClick = function() {
@@ -134,9 +134,8 @@ app.controller('HomeCtrl',
   var init = function() {
     logger("Ctrl:Home:init:: Beginnign to loadProfile/loadProjects...",
         CTRL_LEVEL);
-
-    loadProfile();
     loadProjects();
+    loadProfile();
   };
 
   init();

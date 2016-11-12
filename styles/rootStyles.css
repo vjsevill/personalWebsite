@@ -97,4 +97,8 @@ md-fab-speed-dial:focus {
 }
 
 /*end speed dial*/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 /*end global material design overwrites*/

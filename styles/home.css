@@ -1,68 +1,25 @@
 .pc_homeIcons {
   font-size:24px;
 }
-
-#pid_homeContainer {
-  height:100%;
-  width:50%;
-  margin:0 auto;
-  min-width:1000px;
+.pc_card {
+  background-color:rgba(0, 0, 0, 0.12);
 }
 
-#pid_homeColContainer {
-  min-width:1000px;height:100%;margin:0 auto;
+#pid_homeContainer {
+  margin:auto;
+  max-width:1500px;
 }
 
 #pid_leftDiv {
-  float:left;
-  width:300px;
-  max-width:24rem;
-  min-width:14rem;
-  margin:0;
-  padding:0;
+  flex: 1 0 auto !important;
 }
 
 #pid_profilePic {
-  width:90%;
-  padding:5%;
-}
-
-#pid_persDescription {
-  padding:5%;
-  word-wrap: break-word;
-  width:90%;
-}
-
-#pid_rightDiv {
-  float:left;
-  width:700px;
-  margin:0;
-  padding:0;
+  width:100%;
 }
 
 #pid_logoutIcon {
   background-color:black;
-}
-
-
-#pid_card {
-  background-color:rgba(0, 0, 0, 0.12);
-
-}
-
-#pid_cardTextContainer {
-  width:100%;
-}
-
-#pid_cardText {
-  word-wrap:break-word;
-}
-
-[layout=row] > md-divider {
-  border-top: 0;
-  border-left: 1px solid;
-  border-left-color: rgba(0, 0, 0, 0.12);
-  margin-top:10px;
 }
 
 #pid_profilePic:focus {
